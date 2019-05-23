@@ -2,7 +2,7 @@
 'use strict';
 
 exports.id = 'com.add0n.native_client';
-exports.version = '0.4.1';
+exports.version = '0.4.2';
 
 exports.ids = {
   chrome: [
@@ -44,7 +44,7 @@ exports.ids = {
     '{1fb1ffdc-b95d-451e-be52-7303adf9a0d3}', // Download with FDM
     '{533953f8-ffb6-421c-af1a-5a02a792ab51}', // Download with Wget
     '{48f5395d-5c00-41cd-9a5e-fd2f8d9b74c2}', // Download with FlashGet
-    '{533953f8-ffb6-421c-af1a-5a02a792ab51}', // Download with JDownloader
+    '{03e07985-30b0-4ae0-8b3e-0c7519b9bdf6}', // Download with JDownloader
     '{708bb4c5-336d-4a30-9126-8bf5d773bb41}', // Download with aria2
     '{5510b212-951a-439c-ae73-b1ebbc68055f}', // Edit with Sublime Text
     '{f91bc9ee-ae11-4850-8e6b-ed4b0262ce3b}', // Edit with Notepad++
