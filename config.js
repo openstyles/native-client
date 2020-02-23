@@ -1,7 +1,7 @@
 'use strict';
 
 exports.id = 'com.add0n.native_client';
-exports.version = '0.4.3';
+exports.version = '0.4.4';
 
 exports.ids = {
   chrome: [
@@ -17,6 +17,7 @@ exports.ids = {
     'iidhcgjgmjodnfbghbgpdnhiajbmgcjo', // Download with FDM (Opera)
     'jfpmbokkdeapjommajdfmmheiiakdlgo', // Download with JDownloader (Chrome)
     'jjbbcngfknmgdlekfofhaagmogeifbpc', // Download with JDownloader (Opera)
+    'ilonanfdcnaljoedndpfeflllibalflj', // Download with JDownloader (Edge)
     'hlbdmmifbcfpccdnoknhdfcifiglaihb', // Download with DAP (Chrome)
     'ekeecmblpnobdaijmfkcfcnofopooipg', // Download with DAP (Opera)
     'jplcfomghgpjlgglocndioeceojhoika', // Download with Wget (Chrome)
