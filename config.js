@@ -1,7 +1,7 @@
 'use strict';
 
 exports.id = 'com.add0n.native_client';
-exports.version = '0.4.4';
+exports.version = '0.4.5';
 
 exports.ids = {
   chrome: [
@@ -11,8 +11,9 @@ exports.ids = {
     'ngaohleapbfjleillajbginbiaokmncm', // Send to MPC (Opera)
     'bnjifjcdaiecofdljgempabjecjdjpnm', // Send to MPlayer (Chrome)
     'kalnbllmkdiidgakcakkoecaahkpakmj', // Send to MPlayer (Opera)
-    'nlbhcidbelfhbpglaaoljbfpfpdkpdcg', // Download with IDM (Chrome)
+    'ijagoebbhgpklaaliglekagdjpigbcgm', // Download with IDM (Chrome)
     'kajaikkhnmegmfnlifeklklaienhdekb', // Download with IDM (Opera)
+    'bihikkbcagnajdoncmjebpalfhecpjnb', // Download with IDM (Edge)
     'jlodlegnpjplclncjkgolcmdhjmlokna', // Download with FDM (Chrome)
     'iidhcgjgmjodnfbghbgpdnhiajbmgcjo', // Download with FDM (Opera)
     'jfpmbokkdeapjommajdfmmheiiakdlgo', // Download with JDownloader (Chrome)
@@ -33,6 +34,7 @@ exports.ids = {
     'dbghnkdojpkebjbddhhjfjgapoolnikh', // Send to MPV (Opera)
     'nglfpmpeljnfooojieocihijkeokinno', // Edit with VIM (Chrome)
     'ajcbbbkgmbinpbkllamhphpgpgdabnhf', // Edit with VIM (Opera)
+    'oafkneibbejlfadcdcjglkpdhmjnlfhl', // TEST
   ],
   firefox: [
     '{3e0ac434-26e0-4c03-b757-3078486800c3}', // Send to VLC
