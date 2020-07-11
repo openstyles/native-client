@@ -1,5 +1,7 @@
 @echo off
 
+SET PATH=C:\Windows\System32;%PATH%
+
 pushd "%~dp0"
 CD app
 

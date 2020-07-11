@@ -1,17 +1,18 @@
 'use strict';
 
-var config = require('./config.js');
+const config = require('./config.js');
 
 // closing node when parent process is killed
 process.stdin.resume();
 process.stdin.on('end', () => process.exit());
 
-function observe (request, push, done) {
+function observe(request, push, done) {
   let close;
   const exception = e => {
     push({
+      code: -1,
       type: 'exception',
-      error: e.message
+      error: e.stack
     });
     close();
   };
@@ -42,9 +43,10 @@ function observe (request, push, done) {
       env: process.env,
       push,
       close,
+      setTimeout,
       args: request.args,
       // only allow internal modules that extension already requested permission for
-      require: (name) => (request.permissions || []).indexOf(name) === -1 ? null : require(name)
+      require: name => (request.permissions || []).indexOf(name) === -1 ? null : require(name)
     };
     const script = new vm.Script(request.script);
     const context = new vm.createContext(sandbox);
@@ -59,7 +61,7 @@ function observe (request, push, done) {
   }
 }
 /* message passing */
-var nativeMessage = require('./messaging');
+const nativeMessage = require('./messaging');
 process.stdin
   .pipe(new nativeMessage.Input())
   .pipe(new nativeMessage.Transform(observe))
