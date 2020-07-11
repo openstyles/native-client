@@ -19,7 +19,7 @@ function Input() {
   this._readableState.objectMode = true;
 
   // Unparsed data.
-  this.buf = new Buffer(0);
+  this.buf = Buffer.alloc(0);
   // Parsed length.
   this.len = null;
 }
@@ -81,8 +81,8 @@ function Output() {
 util.inherits(Output, stream.Transform);
 
 Output.prototype._transform = function(chunk, encoding, done) {
-  const len = new Buffer(4);
-  const buf = new Buffer(JSON.stringify(chunk));
+  const len = Buffer.alloc(4);
+  const buf = Buffer.from(JSON.stringify(chunk), 'utf8');
 
   len.writeUInt32LE(buf.length, 0);
 

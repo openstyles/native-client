@@ -1,7 +1,7 @@
 'use strict';
 
 exports.id = 'com.add0n.native_client';
-exports.version = '0.4.5';
+exports.version = '0.4.6';
 
 exports.ids = {
   chrome: [
@@ -34,7 +34,6 @@ exports.ids = {
     'dbghnkdojpkebjbddhhjfjgapoolnikh', // Send to MPV (Opera)
     'nglfpmpeljnfooojieocihijkeokinno', // Edit with VIM (Chrome)
     'ajcbbbkgmbinpbkllamhphpgpgdabnhf', // Edit with VIM (Opera)
-    'oafkneibbejlfadcdcjglkpdhmjnlfhl', // TEST
   ],
   firefox: [
     '{3e0ac434-26e0-4c03-b757-3078486800c3}', // Send to VLC
